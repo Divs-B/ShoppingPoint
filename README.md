@@ -2,12 +2,13 @@
 
 Shopping app to browse up-to-date products list on screen, to add and remove items from cart, and to store wish list items locally in database.
 
-This app incorporated with its best level in 
-- MVVM clean architecture  
+This app incorporated with its level best in 
+- MVVM clean architecture.  
 - LiveData observables to ensure UI state matches our live data state.
-- ViewModel for using UI tasks by lifecycle conscious way and preserving confugration changes
-- Room for storage
-- Mockito (one as of now) for unit test one of LiveData observables communication
+- ViewModel for using UI tasks by lifecycle conscious way and preserving configuration changes.
+- Retrofit2 for REST client.
+- Room for storage.
+- Mockito (one as of now) for unit test one of LiveData observables communication.
 - App (written in Java), run and tested manually on Samsung S10 mobile device.
 
 ## Prerequisites
