@@ -27,16 +27,6 @@ You can git clone the project using the path
 ```
 https://github.com/Divs-B/ShoppingPoint.git
 ```
-## What this project has
-
-- Single Activity Model with reusable Fragments. 
-- Swipe refresh to refresh the page in RecyclerView
-- Show all Product Details.
-- Add and Remove any product to cart and update total amount.
-- Page refresh with updated details like stock etc for added cart items.
-- Add any product to wishlist.
-- Add any product from wishlist to cart.
-- Store wishlist in DB for persistant storage.
 
 ## User Stories Covered
 
@@ -50,3 +40,19 @@ https://github.com/Divs-B/ShoppingPoint.git
 
 ## User Stories Un Done
  - As a Customer I can remove a product from my wishlist. 
+ 
+ ## So What this project has
+ 
+ - Single Activity Model with reusable Fragments. 
+ - Swipe refresh to refresh the page in RecyclerView
+ - Show all Product Details on Home screen, Cart items on Cart screen, and has menu button to go Wishlist screen and Home screen respectively
+ - Add and Remove any product to cart and update total amount.
+ - Page refresh with updated details like stock etc for added cart items.
+ - Add any product to wishlist.
+ - Add any product from wishlist to cart.
+ - Store wishlist in DB for persistant storage.
+ 
+ ## other things
+ 
+ - Base URL (api path) is kept under app/build gradle file inside build config element.
+ - Please swipe or scroll up to refresh and reload screen.
