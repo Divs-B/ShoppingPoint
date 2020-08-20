@@ -3,6 +3,9 @@ package com.example.shoppingpoint.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+/*
+Model class for Cart items
+ */
 public class CartItem {
 
     @SerializedName("id")

@@ -6,6 +6,9 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+/*
+Database definition via Room api class for wishlist model
+ */
 @Database(entities = {WishlistDBModel.class}, version = 1, exportSchema = false)
 public abstract class WishlistDB extends RoomDatabase {
 

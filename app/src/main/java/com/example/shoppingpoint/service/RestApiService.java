@@ -22,7 +22,9 @@ import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
 
-
+/**
+ A retrofit interface for interacting remote
+ */
 public interface RestApiService {
 
     @GET("cloths/products")

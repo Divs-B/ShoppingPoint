@@ -4,6 +4,9 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+/*
+wishlist model class for DB
+ */
 @Entity(tableName = "wishlist")
 public class WishlistDBModel {
 

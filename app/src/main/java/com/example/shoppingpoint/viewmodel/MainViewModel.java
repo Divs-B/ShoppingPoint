@@ -10,6 +10,9 @@ import com.example.shoppingpoint.model.CartItem;
 import com.example.shoppingpoint.model.Product;
 import com.example.shoppingpoint.model.ProductRepository;
 
+/*
+ViewModel class
+ */
 public class MainViewModel extends ViewModel {
 
     private ProductRepository productRepository;

@@ -32,6 +32,16 @@ import com.example.shoppingpoint.viewmodel.MainViewModel;
 import java.util.Calendar;
 import java.util.List;
 
+/**
+ * Created by Divya Bhatt on 16.08.2020,
+ * for Deloitte Code-Test , with given api : https://app.swaggerhub.com/apis/eeliseev/cloths/v1#
+ *
+ * I have kept Api-key for authorization under BuildConfig config in app/build gradle file
+ * Git Repository for this project hence kept private so to not to expose or shared publically.
+ *
+ * This is the single activity that holds view for UI and top level function for handling MutableLiveData.
+ * This has Product, Cart and Wishlist adapters objects and there respective inflation on Recycler View
+ */
 public class MainActivity extends AppCompatActivity implements OnItemClick {
 
     RecyclerView mRecyclerView;
@@ -121,27 +131,6 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
                 prepareRecyclerView_CartItems(cartItemList, mProductList);
             }
         });
-    }
-
-    private void setTotalPrice(List<CartItem> cartItemList) {
-        try {
-            Double totalPrice = 0.0;
-            if (mProductList != null && cartItemList != null) {
-                for (int i = 0; i < cartItemList.size(); i++) {
-                    int _id = cartItemList.get(i).getProductId();
-                    for (int j = 0; j < mProductList.size(); j++) {
-                        if (_id == mProductList.get(j).getId()) {
-                            Double price = Double.parseDouble(mProductList.get(j).getPrice());
-                            totalPrice += price;
-                        }
-                    }
-                }
-            }
-            totalPriceString = "£" + totalPrice;
-            totalPriceMenu.setTitle(totalPriceString);
-        } catch (NumberFormatException ne) {
-            System.out.println(ne.getMessage());
-        }
     }
 
     public void sendCartItem(int id) {
@@ -234,6 +223,27 @@ public class MainActivity extends AppCompatActivity implements OnItemClick {
         swipeRefresh.setRefreshing(false);
         List<WishlistDBModel> list = getAllWishList();
         prepareRecyclerView_WishListItems(list, mProductList);
+    }
+
+    private void setTotalPrice(List<CartItem> cartItemList) {
+        try {
+            Double totalPrice = 0.0;
+            if (mProductList != null && cartItemList != null) {
+                for (int i = 0; i < cartItemList.size(); i++) {
+                    int _id = cartItemList.get(i).getProductId();
+                    for (int j = 0; j < mProductList.size(); j++) {
+                        if (_id == mProductList.get(j).getId()) {
+                            Double price = Double.parseDouble(mProductList.get(j).getPrice());
+                            totalPrice += price;
+                        }
+                    }
+                }
+            }
+            totalPriceString = "£" + totalPrice;
+            totalPriceMenu.setTitle(totalPriceString);
+        } catch (NumberFormatException ne) {
+            System.out.println(ne.getMessage());
+        }
     }
 
 }

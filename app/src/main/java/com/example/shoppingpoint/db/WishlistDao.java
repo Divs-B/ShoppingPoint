@@ -12,7 +12,9 @@ import retrofit2.http.DELETE;
 
 import static androidx.room.OnConflictStrategy.REPLACE;
 
-
+/*
+ wishlist dao for sql queries with respective annotations
+ */
 @Dao
 public interface WishlistDao {
 

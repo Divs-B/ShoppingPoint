@@ -1,10 +1,13 @@
 package com.example.shoppingpoint.service;
 
-        import retrofit2.Retrofit;
-        import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
-        import static com.example.shoppingpoint.BuildConfig.BASE_URL;
+import static com.example.shoppingpoint.BuildConfig.BASE_URL;
 
+/**
+ A retrofit instance creation
+ */
 public class RetrofitInstance {
 
     private static Retrofit retrofit = null;

@@ -25,6 +25,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.http.Query;
 
+/*
+ Interact via Retrofit and putting data set back to model using product and cart model classes.
+ Repository for interacting to LiveData.
+ */
 public class ProductRepository {
 
     private List<Product> productList = new ArrayList<>();
