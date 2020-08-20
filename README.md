@@ -26,9 +26,9 @@ This app incorporated with its level best in
 You can git clone the project using the path
 
 ```
-git clone 
+https://github.com/Divs-B/ShoppingPoint.git
 ```
-## What this project 
+## What this project has
 
 - Single Activity Model with reusable Fragments. 
 - Swipe refresh to refresh the page in RecyclerView
