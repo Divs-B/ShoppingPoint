@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ShoppingPoint</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="view_products">View Products</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="cart_detail">Cart Detail</string>
+    <string name="product_detail">Product Details</string>
+    <string name="title">Title</string>
+    <string name="category">Category</string>
+    <string name="price">Price: £</string>
+    <string name="old_price">No Discount</string>
+    <string name="discount">Discount: </string>
+    <string name="stock">In Stock: </string>
+    <string name="outofstock">Out of Stock</string>
+    <string name="outofstockerror">Sorry, Item is out of stock!</string>
+    <string name="todo">TODO</string>
+</resources>
